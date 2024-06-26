@@ -1,5 +1,8 @@
 export const useGreetNameJs = () => {
-    const greeting = useGreetJs('Stefano')
+    const greetingJs = useGreetJs('Stefano')
+    const greetingTs = useGreetTs('Stefano')
 
-    return greeting
+    console.log(['useGreetNameJs', greetingJs, greetingTs])
+
+    return greetingJs
 }
